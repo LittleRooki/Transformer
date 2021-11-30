@@ -25,8 +25,8 @@ def greedy_search(model, encoder_input, start):
 
 
 if __name__ == '__main__':
-    sent = [['wir werden alle geboren . wir bringen kinder zur welt .'],
-            ['wir durch@@ laufen initi@@ a@@ tions@@ ritu@@ ale .']]
+    sent = [['src_1'],
+            ['src_2']]
     src_vocab = torch.load('de_vocab')
     tgt_vocab = torch.load('en_vocab')
     idx2word = {i: w for i, w in enumerate(tgt_vocab)}
