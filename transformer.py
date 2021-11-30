@@ -287,11 +287,3 @@ class PositionalEncoding(nn.Module):
         x = x + self.pe[:x.size(1), :]
         return self.dropout(x)
 
-if __name__ == '__main__':
-    model = Transformer(64, 64)
-    a = torch.tensor(np.random.randint(0, 10, (2, 64)))
-    a = a.long()
-    out = model(a, a)
-    print(out.shape)
-
-    Transformer()
